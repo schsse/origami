@@ -1,7 +1,8 @@
 .navigation {
     width: 100%;
     height: 14vh;
-    background-color: #234465;
+    /* background-color: #234465; */
+    background-color: orange;
     color: white;
     position: fixed;
     top: 0;
