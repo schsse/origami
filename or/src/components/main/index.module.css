@@ -1,0 +1,16 @@
+.main {
+    display: inline-block;
+    width: 83%;
+    /* height: auto; */
+    height: 200px;
+    margin-top: 15vh;
+    /* border:1px solid blue; */
+    margin-bottom: 5%;
+}
+
+.header {
+    text-align: center;
+    color: #234465;
+    text-decoration: underline;
+    margin-bottom: 2%;
+}
