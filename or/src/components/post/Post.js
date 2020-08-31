@@ -1,23 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react';
 import styles from './index.module.css'
 import logo from '../../images/blue-origami-bird.png'
 
-class Post extends Component{
+// Post is in Posts() in Container(gets the posts with axios and gives it s props to Posts)
+const Post = props =>(
+<li className={styles.item}>
+    <img src = {props.url} alt={props.title} />
+    <img src={logo} alt="blue origami bird" className={styles.logo} />
+    <div>
+        <span>
+          <small>Author:</small>
+          PK the genious
+        </span>
+    </div>
+</li>
+);
 
-    render(){
-      return(
-        <div className={styles.post}>
-          <img src={logo} alt="blue origami bird" className={styles.logo} />
-          <p className={styles.description}>bal proba.....</p>
-          <div>
-            <span>
-              <small>Author:</small>
-              PK the genious
-            </span>
-          </div>
-        </div>
-
-      )
-    }
-}
-export default Post
+export default Post;

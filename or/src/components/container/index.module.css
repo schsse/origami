@@ -1,0 +1,24 @@
+.post {
+    width: 100%;
+    /* border:1px solid red; */
+    height: 45vh;
+    margin-top: 15vh;
+}
+.logo{
+    width: 32px;
+    height: 32px;
+}
+
+.post div {
+    /* border:1px solid red; */
+    height: auto;
+    text-align: right;
+    margin-bottom: 0.5%;
+}
+
+.post div span {
+    text-decoration: underline;
+    text-align: right;
+    /* border:1px solid green; */
+    padding-right: 1%;
+}
