@@ -1,15 +1,26 @@
-import React, {Component} from 'react'
-import styles from './index.module.css'
+import React from 'react'
 import Post from '../post/Post'
+import Bla from '../bla/Bla';
+import styles from './index.module.css'
 
-class Posts extends Component{
-
-    render(){
-        return(
-            <div className={styles.posts}>
-                 <Post />
-            </div>
-        )
-    }
+const Posts = (props) => {
+    let pictures;
+	if(props.data.length>0){
+		pictures = props.data.map(pic => (
+			<Post
+				title={pic.title}
+				key={pic.id}
+				url={`https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`}
+			/>
+		));
+	} else {
+			pictures = <Bla />
+  }
+  
+  return(
+      <ul className={styles.description}>
+        {pictures}
+      </ul>
+  )
 }
-export default Posts
+export default Posts;
