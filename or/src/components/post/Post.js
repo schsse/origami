@@ -6,6 +6,7 @@ import logo from '../../images/blue-origami-bird.png'
 const Post = props =>(
 <li className={styles.item}>
     <img src = {props.url} alt={props.title} />
+    <span>{props.index}</span>
     <img src={logo} alt="blue origami bird" className={styles.logo} />
     <div>
         <span>
