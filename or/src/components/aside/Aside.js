@@ -1,19 +1,17 @@
 import React from 'react'
 import Link from '../link/Link'
 import styles from './index.module.css'
+import getNav from '../../utils/navigation'
 
 const Aside=()=>{
-    const renderLinks=()=>{
-        const bla=[1,2,3,4,5,6,7,8,9,10]
-        return bla.map((n,i)=>{
-          return (<Link href="#" title={`Going to ${n}`} key={i} type="aside" />)
-        })
-      }
-
+        const links = getNav("kuku");
+      
     return(
       <aside className={styles.aside}>
         <ul>
-           {renderLinks()}
+           {links.map((navEl,index)=>{
+          return (<Link href={navEl.link} title={navEl.title} key={index} type="aside" />)
+        })}
         </ul>
       </aside>
     )
