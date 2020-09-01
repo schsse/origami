@@ -1,22 +1,21 @@
 import React, { Component } from 'react'
 import Posts from '../posts/Posts'
 import styles from './index.module.css'
-import logo from '../../images/blue-origami-bird.png'
 
 import axios from 'axios';
-import config from '../config.js';
+// import config from '../config.js';
 
 class Container extends Component{
   constructor(props){
     super(props);
     this.state = {
-        pictures: [],
+        info: [],
         loading: true
     }
 }
 
    componentDidMount(){
-       this.runSearch("origami")
+       this.runSearch("caity lotz")
    }
 
   //  componentDidUpdate(prevProps){
@@ -25,11 +24,13 @@ class Container extends Component{
   //      }
   //  }
 
-    runSearch = (query) => {
-        axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${config}&tags=${query}&per_page=24&format=json&nojsoncallback=1`)
+    // runSearch = (query) => {
+    runSearch = () =>{
+        // axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${config}&tags=${query}&per_page=24&format=json&nojsoncallback=1`)
+        axios.get('https://randomuser.me/api/?results=12&inc=picture,name,email,location,cell,dob')
         .then(response => {
             this.setState({
-            pictures: response.data.photos.photo,
+            info: response.data.results,
             loading: false
             });
         })
@@ -40,10 +41,10 @@ class Container extends Component{
     }
 
     render(){
-      console.log(this.state.pictures);
+      //  console.log(this.state);// results
       return(
-        <div className={styles.post}>
-          <Posts data={this.state.pictures}  />
+        <div className={styles.container}>
+          <Posts data={this.state.info}  />
         </div>
       )
     }
