@@ -5,8 +5,8 @@ import Container from '../container/Container'
 const Main = ()=>{
     return(
       <main className={styles.main}>
-        <h1 className={styles.header}>I made it again!! GitHub is annoying and i am cool!</h1>
-        <Container className={styles.posts}/>
+        <h1 className={styles.header}>Cool React App Site</h1>
+        <Container />
       </main>
     )
 }

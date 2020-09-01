@@ -1,4 +1,4 @@
-const getNav=(userid)=>{
+const getNav=()=>{
     const links = [
         {
             title: "Publications",
@@ -10,7 +10,7 @@ const getNav=(userid)=>{
         },
         {
             title: "Profile",
-            link: '/profile/${userid}'
+            link: '/profile'
         },
         {
             title: "Register",

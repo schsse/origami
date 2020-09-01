@@ -1,7 +1,7 @@
-.post {
+.container {
     width: 100%;
     /* border:1px solid red; */
-    height: 45vh;
+    min-height: 45vh;
     margin-top: 15vh;
 }
 .logo{
@@ -9,14 +9,14 @@
     height: 32px;
 }
 
-.post div {
+.container div {
     /* border:1px solid red; */
     height: auto;
     text-align: right;
     margin-bottom: 0.5%;
 }
 
-.post div span {
+.container div span {
     text-decoration: underline;
     text-align: right;
     /* border:1px solid green; */

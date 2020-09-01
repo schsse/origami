@@ -4,24 +4,35 @@ import Nada from '../nada/Nada';
 import styles from './index.module.css'
 
 const Posts = (props) => {
-    let pictures;
-	if(props.data.length>0){
-		pictures = props.data.map((pic, index) => (
+	 let posts;
+
+	console.log(props.data)
+    if(props.data.length>0){
+		// console.log(props.data.results)
+	 posts = props.data.map((post, index) => (
 			<Post
         index={index}
-				title={pic.title}
-				key={pic.id}
-				url={`https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`}
+				email={post.email}
+				key={post.cell}
+				title={post.name.title}
+				fName={post.name.first}
+				lName={post.name.last}
+				street={post.location.street.name}
+				city={post.location.city}
+				country={post.location.country}
+				postcode={post.location.postcode}
 			/>
 		));
-	} else {
-			pictures = <Nada />
+ 	} 
+	else {
+			posts = <Nada />
   }
+
   
-  return(
+    return(
       <ul className={styles.description}>
-        {pictures}
+        {posts}
       </ul>
-  )
+    )
 }
 export default Posts;
