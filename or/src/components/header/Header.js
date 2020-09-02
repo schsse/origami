@@ -12,7 +12,7 @@ const Header = () =>{
         <img src={logo} alt="blue origami bird" className={styles.logo} />
         <ul className={styles.container}>
         {links.map((navEl,index)=>{
-          return (<Link href={navEl.link} title={navEl.title} key={index} type="header" />)
+          return (<Link href={navEl.link} title={navEl.title} key={navEl.title} type="header" />)
         })}
         </ul>
     </header>

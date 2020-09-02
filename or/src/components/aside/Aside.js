@@ -4,13 +4,13 @@ import styles from './index.module.css'
 import getNav from '../../utils/navigation'
 
 const Aside=()=>{
-        const links = getNav("kuku");
+        const links = getNav();
       
     return(
       <aside className={styles.aside}>
         <ul>
            {links.map((navEl,index)=>{
-          return (<Link href={navEl.link} title={navEl.title} key={index} type="aside" />)
+          return (<Link href={navEl.link} title={navEl.title} key={navEl.title} type="aside" />)
         })}
         </ul>
       </aside>

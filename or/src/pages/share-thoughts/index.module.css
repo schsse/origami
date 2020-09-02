@@ -1,0 +1,15 @@
+.input{
+    display: inline-block;
+    padding: 0.5%;
+    width: 83%;
+    text-align: center;
+}
+textarea{
+    display: block;
+    width: 40%;
+    min-height: 100px;
+    margin: auto;
+}
+.input h3{
+    text-align: left;
+}

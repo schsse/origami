@@ -1,11 +1,13 @@
 import React from 'react'
 import styles from './index.module.css'
+import getNav from '../../utils/navigation'
+import {Link} from 'react-router-dom'
 
-const Link = ({title,type})=>{
+const LinkComponent = ({title,type,href})=>{
   return(
    <li className={styles[`${type}-list-item`]}>
-     <a href="#"  className={styles[`${type}-link`]}>{title}</a>
+     <Link to={href} className={styles[`${type}-link`]}>{title}</Link>
    </li>
   )
 }
-export default Link
+export default LinkComponent

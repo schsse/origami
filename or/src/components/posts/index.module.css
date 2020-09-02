@@ -1,39 +1,11 @@
-/* .post {
-    width: 100%;
-    height: auto;
-    border: 1px solid #234465;
-    margin-bottom: 3%;
-    border-radius: 4px;
-} */
-
- /* .description {
+ .description {
     word-wrap: break-word;
     padding: 0.5%;
     font-style: italic;
-    border:1px solid blue;
+    /* border:1px solid blue; */
     margin-bottom: 0.5%;
-    width: 95%;
+    width: 80%;
     display: inline-block;
     vertical-align: top;
-    ;
-}  */
-
-/*.logo{
-    width: 32px;
-    height: 32px;
-}
-
-.post div {
-    border:1px solid red;
-    height: auto;
-    text-align: right;
-    margin-bottom: 0.5%;
-}
-
-.post div span {
-    text-decoration: underline;
-    text-align: right;
-    border:1px solid green;
-    padding-right: 1%;
-} */
+}  
 

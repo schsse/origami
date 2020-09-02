@@ -15,7 +15,9 @@
 }
 .container{
     width: 94%;
-    text-align: center;
+    /* text-align: center; */
+    padding-left: 2px;
+    margin-left: 8%;
     position: fixed;
     top: 0;
     margin-top: 10px;
