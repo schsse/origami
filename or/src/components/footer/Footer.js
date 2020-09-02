@@ -11,7 +11,7 @@ const Footer = () =>{
     <footer className={styles.footer} >
         <ul className={styles.container}>
           { links.map((navEl,index)=>{
-             return (<Link href={navEl.link} title={navEl.title} key={index} type="footer" />)
+             return (<Link href={navEl.link} title={navEl.title} key={navEl.title} type="footer" />)
           })
         }
           <img src={logo} alt="blue origami bird" className={styles.logo} />

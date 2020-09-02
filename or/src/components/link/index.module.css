@@ -50,6 +50,7 @@
 }
 
 .aside-list-item {
+    cursor: pointer;
     display: block;
     width: 98%;
     border-left: 2px solid #234465;

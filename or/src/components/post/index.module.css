@@ -1,10 +1,10 @@
 .item {
     width: 100%;
     height: auto;
-    border: 1px solid #234465;
     margin-bottom: 3%;
     border-radius: 4px;
     list-style-type: none;
+    border: 1px solid #234465;
 }
 
 .description {
@@ -27,10 +27,10 @@
 .item div {
     /* border:1px solid red; */
     height: auto;
-    text-align: right;
     margin-bottom: 0.5%;
     display: inline-block;
-    width: 70%;
+    text-align: right;
+    width: 100%;
 }
 
 .item div span {

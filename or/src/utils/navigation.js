@@ -1,7 +1,7 @@
 const getNav=()=>{
     const links = [
         {
-            title: "Publications",
+            title: "Home",
             link: '/'
         },
         {
