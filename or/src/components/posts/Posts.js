@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
 import Post from '../post/Post'
 import Nada from '../nada/Nada';
-import PageLayout from '../page-layout/PageLayout';
-import Title from '../title/Title';
 import styles from './index.module.css'
 import axios from 'axios';
 
