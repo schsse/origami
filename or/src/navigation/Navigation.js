@@ -5,6 +5,7 @@ import HomePage from '../pages/homePage/HomePage'
 import ShareThoughtsPage from '../pages/share-thoughts/ShareThoughts'
 import RegisterPage from '../pages/registerPage/RegisterPage'
 import LoginPage from '../pages/loginPage/LoginPage'
+import ProfilePage from '../pages/profilePage/ProfilePage'
 
 const Navigation = () =>{
     return(
@@ -14,6 +15,7 @@ const Navigation = () =>{
                <Route path="/share" component={ShareThoughtsPage} />
                <Route path="/register" component={RegisterPage} />
                <Route path="/login" component={LoginPage} />
+               <Route path="/profile/:userid" component={ProfilePage} />
            </Switch>
        </BrowserRouter>
     )

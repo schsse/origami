@@ -54,12 +54,7 @@ class Posts extends Component{
 	}
    }
 
-  
-    // return(
-    //   <ul className={styles.description}>
-    //     {posts}
-    //   </ul>
-	// )
+   
 	render(){
 		// console.log(this.state);// results
 	  return(
